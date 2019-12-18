@@ -1,0 +1,11 @@
+services:
+
+  Pawly\RestApiValidator\Resolver\CustomRequestResolver:
+    arguments:
+      - '@validator'
+    tags:
+      - { name: controller.request_value_resolver }
+
+  Pawly\RestApiValidator\Subscriber\RestApiValidatorExceptionSubscriber:
+    tags:
+      - { name: kernel.event_subscriber, event: kernel.exception }

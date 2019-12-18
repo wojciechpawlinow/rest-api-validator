@@ -1,0 +1,29 @@
+{
+    "name": "pln0w/rest-api-validator",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wojciech Pawlinów",
+            "email": "w.pawlinow@gmail.com",
+            "homepage": "https://github.com/pln0w",
+            "role": "Developer"
+        }
+    ],
+    "type": "library",
+    "homepage": "https://github.com/pln0w/rest-api-validator",
+    "version": "1.0.0",
+    "keywords": ["validator", "rest", "api"],
+    "description": "A package for creating request objects for pre-controller validation",
+    "require": {
+        "php": "^7.4",
+        "symfony/validator": "5.0.*",
+        "symfony/http-foundation": "5.0.*",
+        "symfony/http-kernel": "5.0.*",
+        "symfony/dependency-injection": "5.0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pawly\\RestApiValidator\\": "src/"
+        }
+    }
+}
